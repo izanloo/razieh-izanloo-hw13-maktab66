@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="description" content="maktba66">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="راضیه ایزانلو">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <head  >
+        <title>راضیه ایزانلو</title>
+    </head>
+    <body>
+
+        <div class="container ">
+            <button type="submit" class="btn btn-success my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                  </svg>           
+                 Add Row
+            </button>
+            <!-- table -->           
+                <table class="table border-bottom">
+                    <thead class="bg-success  text-white">
+                      <tr>
+                        <th scope="col" class="border-right">Actions</th>
+                        <th scope="col" class="border-right">Number</th>
+                        <th scope="col" class="border-right">Type</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="col" class="border-right pr-0">
+                            <button class="btn btn-danger" onclick= 'deleted(this)'><i class="fas fa-trash px-1"></i>Delete</button>
+                            <button class="btn btn-primary clone" onclick="cloneRow(this)"><i class="fas fa-copy px-1"></i>Clone</button>
+                        </td>
+                        <td class="border-right">
+                            <input type="number" name="input-number">
+                        </td>
+                        <td class="border-right">
+                            <input type="text" name="input-type">
+                        </td>
+                        <td>
+                            <input type="radio" name="input-Status" value="new" id="new">
+                            <label for="new">New</label>
+                            <input type="radio" class="ml-3" name="input-Status" value="progress" id="progress">
+                            <label for="progress">progress</label>
+                            <input type="radio" class="ml-3" name="input-Status"  value="confirmed" id="confirmed">
+                            <label for="confirmed">confirmed</label>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                 </table>
+                 <p class=" mb-2">Allow rows number: <span class="countrow">1</span></p>
+                 <p>Not Confirmed rows number: <span class="counter-cheked">1</span></p>
+    
+        </div>
+       
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     </body>
+
+</html>
